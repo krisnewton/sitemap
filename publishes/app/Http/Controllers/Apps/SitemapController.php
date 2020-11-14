@@ -18,8 +18,8 @@ class SitemapController extends Controller
     public function index()
     {
     	// Masukkan URL tiap sitemap ke dalam item $data[*]['url']
-    	// Contoh route:
-    	// Route::get('sitemaps.xml', 'Apps\SitemapController@index');
+    	// * Contoh route:
+    	// * Route::get('sitemaps.xml', 'Apps\SitemapController@index');
 
     	$data = [];
 
@@ -36,8 +36,8 @@ class SitemapController extends Controller
     {
     	// Masukkan URL tiap konten ke dalam item $data[*]['url']
     	// Masukkan lastmod tiap konten ke dalam item $data[*]['lastmod']
-    	// Contoh route:
-    	// Route::get('sitemap-users-{index}.xml', 'Apps\SitemapController@users');
+    	// * Contoh route:
+    	// * Route::get('sitemap-users-{index}.xml', 'Apps\SitemapController@users');
 
     	if ($index > 0) {
     		$skip = $this->skip($index);
